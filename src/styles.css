@@ -13,7 +13,7 @@ body {
   background-size: cover; 
   font-family: "Roboto", sans-serif;
   background-attachment: fixed;
-  min-height: 100vh;
+ 
 }
 
 header {
@@ -110,4 +110,64 @@ footer {
 .footer-copy {
   font-size: 0.8rem;
   color: #aaa;
+}
+
+
+/* Tablette */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  #content h1 {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #content p {
+    width: 90%;
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  #content {
+    padding: 20px 10px;
+  }
+
+  #content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .footer-container {
+    gap: 10px;
+  }
+  
 }
