@@ -89,16 +89,16 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* espace égal */
-  align-items: center;            /* bien centré verticalement */
-  flex-wrap: wrap;                /* pour s’adapter sur mobile */
-  gap: 20px;                      /* petit espace si ça casse en 2 lignes */
+  justify-content: space-between; 
+  align-items: center;            
+  flex-wrap: wrap;              
+  gap: 20px;                    
 }
 
 .footer-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #c49b63; /* touche dorée */
+  color: #c49b63; 
 }
 
 .footer-info p {
@@ -112,8 +112,8 @@ footer {
   color: #aaa;
 }
 
+/* Responsive */
 
-/* Tablette */
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -141,7 +141,9 @@ footer {
   }
 }
 
-/* Mobile */
+
+
+
 @media (max-width: 600px) {
   header {
     padding: 10px;
