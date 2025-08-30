@@ -17,4 +17,20 @@ module.exports = {
     static: './dist',
   },
   mode: 'development',
+    module: {
+    rules: [
+         {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg|webp)$/i,
+                type: "asset/resource",
+            },
+    ],
+  },
 };
