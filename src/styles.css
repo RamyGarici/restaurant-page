@@ -86,7 +86,6 @@ button:active {
   justify-content: center;
   padding: 0 300px 300px 0
 }
-
 #aa{
 
   margin-bottom: 200px;
@@ -217,6 +216,87 @@ footer {
   padding-top: 20px;
 }
 
+.hero-box {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.3) 0%,
+    rgba(0,0,0,0.1) 100%
+  ); /* voile subtil pour lisibilité */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+
+
+.text {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #fff;
+  margin: 40px 0 20px 0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 4px solid #c49b63;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.box img {
+  border-radius: 8px;
+  margin: 10px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.box h3 {
+  color: #c49b63;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.box p {
+  font-size: 1rem;
+  margin: 5px 0;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.menu {
+  font-size: 2.5rem;        
+  font-family: "Georgia", serif;
+  color: #8B0000;          
+  text-align: center;       
+  margin: 40px 0 20px 0;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #c49b63; 
+  display: inline-block;    
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
 
 
 
@@ -248,12 +328,57 @@ footer {
     align-items: center;
     text-align: center;
   }
+   .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .grid-box {
+    gap: 30px;
+  }
+
+  .box h3 {
+    font-size: 1.3rem;
+  }
+
+  .box p {
+    font-size: 0.95rem;
+  }
+
 }
 
 
 
 
 @media (max-width: 600px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .grid-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .box h3 {
+    font-size: 1.2rem;
+  }
+
+  .box p {
+    font-size: 0.9rem;
+  }
+
+  .hero-box {
+    padding: 30px 15px;
+  }
+
   header {
     padding: 10px;
   }
