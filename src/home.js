@@ -1,6 +1,11 @@
+
+import homeimg from "./assets/home.jpg"
 const content = document.querySelector("#content");
+const body = document.querySelector("body"); 
+
 const home = ()=>{
     if(!content) return;
+    body.style.backgroundImage=`url(${homeimg})`;
     content.innerHTML = `
    
         <h1 class="hero-text">The Nomad’s Table</h1>

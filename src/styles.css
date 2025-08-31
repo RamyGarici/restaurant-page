@@ -16,6 +16,12 @@ body {
  
 }
 
+
+
+
+
+
+
 header {
   background-color: rgba(56, 56, 56, 0.7);
 display: flex; 
@@ -30,15 +36,46 @@ width: 100%;}
 
 
 
-button{
+button {
   color: white;
   font-size: 30px;
-  padding: 0 80px 0 80px;
+  padding: 0 80px;
   border: none;
   background-color: transparent;
-
-
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
 }
+
+
+button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #c49b63; /* doré chic */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+button:hover {
+  color: #c49b63;
+}
+
+button:hover::after {
+  width: 60%; /* soulignement partiel (élégant) */
+}
+
+/* Effet clic : léger appui */
+button:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+
 
 #content{
   width: 100%;

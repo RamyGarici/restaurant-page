@@ -1,5 +1,6 @@
 import "./styles.css";
 import home from "./home.js";
+import menu from "./menu.js";
 
 
 
@@ -11,4 +12,5 @@ const aboutBtn = document.querySelector("#about-btn");
 
 home();
 homeBtn.addEventListener("click", home);
+menuBtn.addEventListener("click",menu)
 
