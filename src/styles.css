@@ -87,7 +87,7 @@ button:active {
   padding: 0 300px 300px 0
 }
 
-#content h1{
+#aa{
 
   margin-bottom: 200px;
   margin-left: 250px;
@@ -148,6 +148,75 @@ footer {
   font-size: 0.8rem;
   color: #aaa;
 }
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.text,
+.about-conclusion {
+  color: #fff; 
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.about-title{
+  margin: 20px;
+}
+
+.about-subtitle{
+  margin:20px;
+}
+
+.about-list {
+  list-style: none; 
+  padding: 0;
+  margin: 30px 0;
+  width: 80%;
+  max-width: 800px;
+}
+
+.about-list li {
+  background: rgba(56, 56, 56, 0.6); 
+  color: #f5f5f5;
+  margin: 12px 0;
+  padding: 15px 20px;
+  border-left: 4px solid #c49b63;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-list li:hover {
+  transform: translateX(8px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  background: rgba(56, 56, 56, 0.8);
+}
+
+.about-list li::before {
+  content: "✦"; 
+  color: #c49b63;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.about-conclusion {
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: center;
+  font-style: italic;
+  border-top: 2px solid #c49b63;
+  padding-top: 20px;
+}
+
 
 
 

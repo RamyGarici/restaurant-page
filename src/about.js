@@ -11,13 +11,15 @@ const about = () => {
   content.innerHTML = `
     <h1 class="about-title hero-text">About Us</h1>
 
+    <div class="about-container">
+
     <p class="about-intro">
       The Nomad’s Table was born from a journey across the Mediterranean, and Europe. 
       Its founder, deeply passionate about the diversity of culinary traditions, dreamed of creating 
       a place where every dish tells a story and every flavor carries a memory.
     </p>
 
-    <h2 class="about-subtitle">Our Philosophy</h2>
+    <h2 class="about-subtitle hero-text">Our Philosophy</h2>
     <ul class="about-list">
       <li><strong>Authenticity:</strong> we carefully select seasonal, local ingredients, working hand-in-hand with farmers, fishermen, and artisans who share our respect for nature and quality.</li>
       <li><strong>Journey:</strong> our menu is inspired by the spice routes and nomadic traditions, from Moroccan tagines to Mediterranean seafood.</li>
@@ -28,6 +30,7 @@ const about = () => {
       Here, dining is not only about what you eat—it is about what you feel. 
       We invite you to slow down, to savor each bite, and to let your senses travel.
     </p>
+    </div>
   `;
 };
 

@@ -8,7 +8,7 @@ const home = ()=>{
     body.style.backgroundImage=`url(${homeimg})`;
     content.innerHTML = `
    
-        <h1 class="hero-text">The Nomad’s Table</h1>
+        <h1 id="aa" class="hero-text">The Nomad’s Table</h1>
         <p class="text">
           Welcome to The Nomad’s Table, where flavors travel beyond borders. 
           Step inside and embark on a culinary journey inspired by the caravans of the desert, 
